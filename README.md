@@ -18,19 +18,18 @@ If this project helped you, please ⭐️ star it. **Also try [OfflineLLM](https
 
 <table>
   <tr>
-    <td><img src="screenshots/01_library_list.png" width="220"/></td>
-    <td><img src="screenshots/02_library_grid.png" width="220"/></td>
-    <td><img src="screenshots/03_library_add_menu.png" width="220"/></td>
+    <td><img src="screenshots/01_library_list.png" width="320"/></td>
+    <td><img src="screenshots/02_library_grid.png" width="320"/></td>
+    <td><img src="screenshots/03_library_add_menu.png" width="320"/></td>
   </tr>
   <tr>
-    <td><img src="screenshots/04_reader.png" width="220"/></td>
-    <td><img src="screenshots/05_reader_tts.png" width="220"/></td>
-    <td><img src="screenshots/06_settings_appearance.png" width="220"/></td>
+    <td><img src="screenshots/04_reader.png" width="320"/></td>
+    <td><img src="screenshots/05_reader_tts.png" width="320"/></td>
+    <td><img src="screenshots/06_settings_appearance.png" width="320"/></td>
   </tr>
   <tr>
-    <td><img src="screenshots/07_settings_reading.png" width="220"/></td>
-    <td><img src="screenshots/08_settings_security_about.png" width="220"/></td>
-    <td></td>
+    <td><img src="screenshots/07_settings_reading.png" width="320"/></td>
+    <td><img src="screenshots/08_settings_security_about.png" width="320"/></td>
   </tr>
 </table>
 
@@ -73,20 +72,6 @@ If this project helped you, please ⭐️ star it. **Also try [OfflineLLM](https
 3. Open the APK and tap Install
 
 Requires Android 14+.
-
-## Build from Source
-
-```
-git clone https://github.com/jegly/pages.git
-cd pages
-./gradlew assembleRelease
-```
-
-**Prerequisites:** JDK 17, Android SDK (compileSdk 35)
-
-## License
-
-Apache License 2.0
 
 ---
 
