@@ -1,0 +1,7 @@
+plugins {
+    alias(libs.plugins.pages.android.feature.api)
+}
+
+android {
+    namespace = "com.jegly.pages.feature.reader.api"
+}

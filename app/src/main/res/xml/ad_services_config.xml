@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Deny all Privacy Sandbox ad/tracking APIs. Pages is a local-only reader;
+    no ad measurement, audience targeting, topics inference, or signal collection
+    should ever run inside this process.
+-->
+<ad-services-config>
+    <attribution-reporting allowAllToAccess="false" />
+    <custom-audiences allowAllToAccess="false" />
+    <topics allowAdPartners="false" />
+    <protected-signals allowAllToAccess="false" />
+</ad-services-config>

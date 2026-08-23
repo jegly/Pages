@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Monochrome adaptive icon layer for themed-icon support (Android 13+).
+
+    The document body is fully opaque (system tints it with the theme foreground colour).
+    Text-line slots are punched out by the even-odd rule so the theme background colour
+    shows through them, giving the icon readable detail at small sizes.
+    The fold triangle is drawn at reduced opacity so it reads as a subtle corner crease.
+
+    Viewport is 512×512 (matches the SVG source). Inner-group scale=2.56 applied to
+    all coordinates: page M52,44→156,156 and text lines from the original SVG.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Document body with text-line cutouts -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="
+            M133,113 L338,113 L399,174 L399,399 L133,399 Z
+            M164,220 H358 V234 H164 Z
+            M164,251 H358 V265 H164 Z
+            M164,282 H358 V296 H164 Z
+            M164,313 H358 V327 H164 Z
+            M164,344 H358 V358 H164 Z
+            M164,374 H277 V388 H164 Z" />
+
+    <!-- Fold crease — slightly dimmer so it reads as a separate element -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.55"
+        android:pathData="M338,113 L338,174 L399,174 Z" />
+
+</vector>

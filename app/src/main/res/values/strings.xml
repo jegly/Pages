@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pages</string>
+    <string name="biometric_prompt_title">Unlock Pages</string>
+    <string name="biometric_prompt_subtitle">Authenticate to access your library</string>
+    <string name="biometric_prompt_negative_button">Cancel</string>
+    <string name="no_device_lock_title">Device Lock Required</string>
+    <string name="no_device_lock_message">Pages requires a device PIN, pattern, or biometric lock to protect your library. Please set one up in Settings.</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="exit">Exit</string>
+    <string name="tamper_detected_title">Unverified App</string>
+    <string name="tamper_detected_message">This copy of Pages was not signed by its original developer and may have been modified. For your security, it cannot be opened. Please reinstall Pages from an official source.</string>
+</resources>
