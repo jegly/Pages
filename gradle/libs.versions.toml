@@ -33,7 +33,7 @@ kotlinxDatetime = "0.6.1"
 kotlinxSerializationJson = "1.8.0"
 ksp = "2.3.4"
 room = "2.8.4"
-sqlcipher = "4.6.1"
+sqlcipher = "4.19.1"
 truth = "1.4.4"
 turbine = "1.2.0"
 
