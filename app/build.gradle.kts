@@ -10,8 +10,8 @@ plugins {
 android {
     defaultConfig {
         applicationId = "com.jegly.pages"
-        versionCode = 2
-        versionName = "1.0.1"
+        versionCode = 3
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "com.jegly.pages.core.testing.PagesTestRunner"
     }
