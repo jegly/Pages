@@ -24,7 +24,7 @@ import com.jegly.pages.core.model.Tag
 import com.jegly.pages.core.model.UserPreferences
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import kotlinx.datetime.Clock
+import kotlin.time.Clock
 import javax.inject.Inject
 
 class OfflineFirstPagesRepository @Inject constructor(

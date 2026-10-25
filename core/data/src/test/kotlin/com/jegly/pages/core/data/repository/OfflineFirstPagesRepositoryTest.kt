@@ -7,7 +7,7 @@ import com.jegly.pages.core.model.Bookmark
 import com.jegly.pages.core.testing.repository.TestPagesRepository
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
-import kotlinx.datetime.Clock
+import kotlin.time.Clock
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Before
