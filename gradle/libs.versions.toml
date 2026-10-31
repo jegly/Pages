@@ -1,4 +1,6 @@
 [versions]
+# Direct pin: media3 / kotlinx-coroutines-guava pull an older Guava into the APK.
+guava = "33.7.2-android"
 androidDesugarJdkLibs = "2.1.5"
 # AGP and tools should be updated together (tools = AGP major + 23)
 androidGradlePlugin = "9.5.0"
@@ -41,6 +43,7 @@ turbine = "1.2.1"
 androidx-compose-ui-test = ["androidx-compose-ui-test", "androidx-compose-ui-testManifest"]
 
 [libraries]
+guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
 android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
