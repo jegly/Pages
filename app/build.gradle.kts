@@ -10,8 +10,9 @@ plugins {
 android {
     defaultConfig {
         applicationId = "com.jegly.pages"
-        versionCode = 3
-        versionName = "1.0.2"
+        // CI release builds pass these; local builds use the defaults.
+        versionCode = providers.gradleProperty("appVersionCode").map(String::toInt).getOrElse(3)
+        versionName = providers.gradleProperty("appVersionName").getOrElse("1.0.2")
 
         testInstrumentationRunner = "com.jegly.pages.core.testing.PagesTestRunner"
     }
