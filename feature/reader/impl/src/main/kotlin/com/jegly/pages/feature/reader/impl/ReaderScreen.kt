@@ -62,6 +62,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Slider
+import androidx.compose.material3.SliderState
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
@@ -681,11 +682,24 @@ fun ReaderScreen(
                                 .padding(bottom = 2.dp),
                         )
                     }
+                    // The custom thumb is only available on the SliderState overload.
+                    val pageSliderState = remember(uiState.totalPages) {
+                        // (value, steps, valueRange)
+                        SliderState(
+                            if (uiState.totalPages > 1) uiState.currentPage.toFloat() else 0f,
+                            (uiState.totalPages - 2).coerceAtLeast(0),
+                            0f..(if (uiState.totalPages > 1) (uiState.totalPages - 1).toFloat() else 1f),
+                        )
+                    }
+                    LaunchedEffect(pageSliderState, uiState.currentPage) {
+                        pageSliderState.value = if (uiState.totalPages > 1) uiState.currentPage.toFloat() else 0f
+                    }
                     Slider(
-                        value = if (uiState.totalPages > 1) uiState.currentPage.toFloat() else 0f,
-                        onValueChange = { viewModel.goToPage(it.toInt()) },
-                        valueRange = 0f..(if (uiState.totalPages > 1) (uiState.totalPages - 1).toFloat() else 1f),
-                        steps = (uiState.totalPages - 2).coerceAtLeast(0),
+                        state = pageSliderState,
+                        onValueChange = {
+                            pageSliderState.value = it
+                            viewModel.goToPage(it.toInt())
+                        },
                         modifier = Modifier
                             .fillMaxWidth()
                             .navigationBarsPadding()
