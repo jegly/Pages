@@ -53,6 +53,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.guava)
     implementation(projects.feature.library.api)
     implementation(projects.feature.library.impl)
     implementation(projects.feature.reader.api)
