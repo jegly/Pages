@@ -77,13 +77,13 @@ Release APKs use hybrid signing (APK Signature Scheme v3.2): the original app ke
 
 | File | SHA-256 |
 | --- | --- |
-| `Pages-1.0.2-PQC-signed.apk` | `ff3e6349e6de40bdbcdbd8ac6346f26347240238b1ab99c690a488d10fd418ec` |
+| `Pages-1.0.3-PQC-signed.apk` | `4c0fa65aa4288642119419b614650fd82101699559e0a019233b7861e203cd42` |
 
 Verify a download:
 
 ```bash
-sha256sum Pages-1.0.2-PQC-signed.apk
-apksigner verify -v --print-certs Pages-1.0.2-PQC-signed.apk   # build-tools 37.0.0 on JDK 25 shows all three keys
+sha256sum Pages-1.0.3-PQC-signed.apk
+apksigner verify -v --print-certs Pages-1.0.3-PQC-signed.apk   # build-tools 37.0.0 on JDK 25 shows all three keys
 ```
 
 Signing certificate SHA-256:
