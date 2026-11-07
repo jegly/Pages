@@ -1,6 +1,6 @@
 [versions]
 # Direct pin: media3 / kotlinx-coroutines-guava pull an older Guava into the APK.
-guava = "33.7.2-android"
+guava = "33.8.0-android"
 androidDesugarJdkLibs = "2.1.5"
 # AGP and tools should be updated together (tools = AGP major + 23)
 androidGradlePlugin = "9.5.0"
